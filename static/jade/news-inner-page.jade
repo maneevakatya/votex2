@@ -1,0 +1,17 @@
+include blocks/blocks
+
+doctype html
+html(lang="ru")
+	+head
+	body
+			header.header
+				+logo
+				+nav
+				+contacts
+			.bg(style="background-image: url(img/news-bg-inner.jpg);")
+			.inner-wrapper
+				+news-inner
+			+footer
+			+agreement
+			+scripts
+			script(src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c05409bc603efbf")

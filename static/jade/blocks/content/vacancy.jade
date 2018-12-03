@@ -1,0 +1,73 @@
+mixin vacancy
+	section.vacancy
+		.side-nav
+			h1.side-nav__title Вакансии
+			ul.side-nav__list
+				li.side-nav__item.side-nav__item--active
+					a(href="#").side-nav__link Москва
+					ul.side-nav__list
+						li.side-nav__item.side-nav__item
+							a(href="#").side-nav__link Менеджер по работе с розничными сетями
+						li.side-nav__item.side-nav__item
+							a(href="#").side-nav__link Менеджер по работе с клиентами
+						li.side-nav__item.side-nav__item
+							a(href="#").side-nav__link Руководитель швейного производства
+						li.side-nav__item.side-nav__item
+							a(href="#").side-nav__link Помощник руководителя
+						li.side-nav__item.side-nav__item
+							a(href="#").side-nav__link Технолог-колорист
+						li.side-nav__item.side-nav__item
+							a(href="#").side-nav__link Технолог швейного производства
+				li.side-nav__item
+					a(href="#").side-nav__link Вологда
+		.vacancy__inner
+			.vacancy__info
+				h2.vacancy__title Москва
+				.vacancy__list
+					.vacancy__item
+						a(href="#").vacancy__link Менеджер по работе с розничными сетями
+						span.vacancy__info-text.vacancy__salari Заработная плата: от 120 000 руб. на руки
+						span.vacancy__info-text.vacancy__experience Требуемый опыт работы: более 6 лет
+						span.vacancy__info-text.vacancy__employment Полная занятость, полный день
+					.vacancy__item
+						a(href="#").vacancy__link Менеджер по работе с клиентами
+						span.vacancy__info-text.vacancy__salari Заработная плата: 50 000-150 000 руб
+						span.vacancy__info-text.vacancy__experience Требуемый опыт работы: более 3 лет
+						span.vacancy__info-text.vacancy__employment Полная занятость, полный день
+					.vacancy__item
+						a(href="#").vacancy__link Руководитель швейного производства
+						span.vacancy__info-text.vacancy__salari Заработная плата: 80 000-100 000 руб
+						span.vacancy__info-text.vacancy__experience Требуемый опыт работы: более 3 лет
+						span.vacancy__info-text.vacancy__employment Полная занятость, полный день
+					.vacancy__item
+						a(href="#").vacancy__link Помощник руководителя
+						span.vacancy__info-text.vacancy__salari Заработная плата: 65 000-80 000 руб.
+						span.vacancy__info-text.vacancy__experience Требуемый опыт работы: более 2 лет
+						span.vacancy__info-text.vacancy__employment Полная занятость, полный день
+					.vacancy__item
+						a(href="#").vacancy__link Технолог-колорист
+						span.vacancy__info-text.vacancy__salari Заработная плата: от 65 000 руб.
+						span.vacancy__info-text.vacancy__experience Требуемый опыт работы: более 3 лет
+						span.vacancy__info-text.vacancy__employment Полная занятость, полный день
+					.vacancy__item
+						a(href="#").vacancy__link Технолог швейного производства
+						span.vacancy__info-text.vacancy__salari Заработная плата: 65 000-80 000 руб.
+						span.vacancy__info-text.vacancy__experience Требуемый опыт работы: более 3 лет
+						span.vacancy__info-text.vacancy__employment Полная занятость, полный день
+			.vacancy__resume
+				h2.vacancy__title Отдел кадров
+				.vacancy__resume-item.vacancy__resume-item--address
+					span.vacancy__resume-text г. Москва
+					span.vacancy__resume-text 2-й Павелецкий проезд д.5 стр.1
+					span.vacancy__resume-text БЦ Ривердейл 4 этаж
+				.vacancy__resume-item.vacancy__resume-item--phone
+					span.vacancy__resume-text +7 960 290 62 03
+				.vacancy__resume-item.vacancy__resume-item--mail
+					span.vacancy__resume-text rezume@vologda-textile.com
+				a(href="#").vacancy__resume-btn Скачать шаблон анкеты-резюме
+				form(action="" method="post" name="resume-form")
+				.vacancy__resume-item.vacancy__resume-item--add
+					input.vacancy__resume-input.js-file(id="feedback-file" type="file" name="resume" data-placeholder="Добавить резюме")
+					label.vacancy__resume-label
+						span Прикрепить резюме
+				button.vacancy__resume-formbtn(type="submit") Отправить

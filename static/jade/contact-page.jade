@@ -1,0 +1,17 @@
+include blocks/blocks
+
+doctype html
+html(lang="ru")
+	+head
+	body
+			header.header
+				+logo
+				+nav
+				+contacts
+			.bg(style="background-image: url(img/contact-page-bg.jpg);")
+			.inner-wrapper
+				+contact
+			+footer
+			+agreement
+			+scripts
+			script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASrEcuWv4jQn7jOq_mzNiGBs5f8Fjd0yY")

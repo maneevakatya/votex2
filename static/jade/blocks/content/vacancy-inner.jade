@@ -1,0 +1,82 @@
+mixin vacancy-inner
+	section.vacancy
+		.side-nav
+			h1.side-nav__title Вакансии
+			ul.side-nav__list
+				li.side-nav__item.side-nav__item--active
+					a(href="#").side-nav__link Москва
+					ul.side-nav__list
+						li.side-nav__item.side-nav__item--active
+							a(href="#").side-nav__link Менеджер по работе с розничными сетями
+						li.side-nav__item.side-nav__item
+							a(href="#").side-nav__link Менеджер по работе с клиентами
+						li.side-nav__item.side-nav__item
+							a(href="#").side-nav__link Руководитель швейного производства
+						li.side-nav__item.side-nav__item
+							a(href="#").side-nav__link Помощник руководителя
+						li.side-nav__item.side-nav__item
+							a(href="#").side-nav__link Технолог-колорист
+						li.side-nav__item.side-nav__item
+							a(href="#").side-nav__link Технолог швейного производства
+				li.side-nav__item
+					a(href="#").side-nav__link Вологда
+		.vacancy__inner.vacancy__inner--mb
+			.vacancy__info
+				h2.vacancy__title Москва
+				.vacancy__text
+					h3 Менеджер по работе с розничными сетями
+					p Заработная плата: от 120 000 руб. на руки
+					p Требуемый опыт работы: более 6 лет
+					p Полная занятость, полный день
+					br
+					p Менеджер по работе с ключевыми клиентами по работе с федеральными торговыми сетями в текстильной компании.
+					br
+					h4 Обязанности:
+					ul
+						li Ввод, продвижение и развитие продаж продукции производителя в национальных и на территории РФ.
+						li Анализ рынка, мониторинг конкурентной среды.
+						li Участие в разработке и реализация ценовой стратегии.
+						li Проведение презентаций компании и продукции.
+						li Подготовка коммерческих предложений, проведение переговоров, заключение договоров.
+						li Разработка и реализация промо-активностей, анализ эффективности.
+						li Работа по отсутствию дебиторской задолженности.
+						li Постановка задач и контроль работы мерчандайзинга.
+						li Улучшение условий работы с действующими клиентами.
+						li Планирование и прогнозирование продаж.
+						li Бюджетирование.
+						li Взаимодействие с дистрибьюторами.
+						li Отчётность перед руководством Компании.
+					h4 Требования:
+					ul
+						li Образование высшее.
+						li Опыт работы в производственных или крупных торговых компаниях не менее 5-ти лет.
+						li Обязательный успешный опыт работы с федеральными и региональными сетевыми клиентами, опыт развития продаж с нуля.
+						li Личный опыт и навыки в переговорах с закупщиками крупных торговых сетей (подписание годовых условий, ввод новых позиций, работа с «Собственной Торговой Маркой»).
+						li Наличие наработанных контактов в федеральных торговых сетях в текстильной промышлености приветствуются.
+						li Опыт работы с региональными торговыми сетями через дистрибьютора.
+						li Готовность к не частным, но необходимым командировкам.
+						li Умение анализировать и ориентироваться в быстро меняющейся обстановке.
+						li Опытный пользователь компьютера.
+					h4 Условия:
+					ul
+						li Оформление согласно ТК РФ.
+						li Офис компании расположен – за МКАД (1 км в область, Юг).
+						li Испытательный срок от 1 мес до 3 мес.
+						li Заработная плата от 120000 и выше.
+			.vacancy__resume
+				h2.vacancy__title Отдел кадров
+				.vacancy__resume-item.vacancy__resume-item--address
+					span.vacancy__resume-text г. Москва
+					span.vacancy__resume-text 2-й Павелецкий проезд д.5 стр.1
+					span.vacancy__resume-text БЦ Ривердейл 4 этаж
+				.vacancy__resume-item.vacancy__resume-item--phone
+					span.vacancy__resume-text +7 960 290 62 03
+				.vacancy__resume-item.vacancy__resume-item--mail
+					span.vacancy__resume-text rezume@vologda-textile.com
+				a(href="#").vacancy__resume-btn Скачать шаблон анкеты-резюме
+				form(action="" method="post" name="resume-form")
+				.vacancy__resume-item.vacancy__resume-item--add
+					input.vacancy__resume-input.js-file(id="feedback-file" type="file" name="resume" data-placeholder="Добавить резюме")
+					label.vacancy__resume-label
+						span Прикрепить резюме
+				button.vacancy__resume-formbtn(type="submit") Отправить

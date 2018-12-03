@@ -1,0 +1,108 @@
+.news-item{
+  display: flex;
+  &__content{
+    max-width: 843px;
+    width:100%;
+    margin-right: 94px;
+  }
+  &__date{
+    color:#454545;
+    font-size:13px;
+    display:block;
+    margin-bottom: 12px;
+  }
+  &__img{
+    margin-bottom: 23px;
+  }
+  &__text p{
+    font-size: 15px;
+    color: #454545;
+    line-height: 30px;
+    margin:0;
+  }
+  &__text{
+    margin-bottom: 37px;
+  }
+  &__title{
+    font-size: 28px;
+    color: #454545;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  &__inner{
+    display: flex;
+  }
+  &__btns{
+    margin-bottom: 44px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__btn{
+    font-size: 17px;
+    color:#454545;
+    line-height: 0;
+    background-color: transparent;
+    border: 2px solid #454545;
+    outline-color: transparent;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 256px;
+    width: 100%;
+    cursor: pointer;
+    transition: border-color 0.6s ease;
+  }
+  &__btn:hover{
+    border-color: #d5d5d5;
+  }
+  &__btn:hover span{
+    border-color: #d5d5d5;
+  }
+  &__btn span{
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    width: 51px;
+    height: 50px;
+    position: relative;
+    transition: border-color 0.6s ease;
+  }
+  &__btn--prev span{
+    border-right: 2px solid #454545;
+  }
+  &__btn--next span{
+    border-left: 2px solid #454545;
+  }
+  &__btn span:before{
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 18px;
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+  &__btn--prev span:before{
+    background-image: url(../i/prev-btn.png);
+  }
+  &__btn--next span:before{
+    background-image: url(../i/next-btn.png);
+    }
+  &__btn-text{
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  &__sharing-link{
+    width: 45px;
+    height: 45px;
+    display: block;
+    border-radius: 5px;
+  }
+  &__sharing-link--fb{
+    background-color: #23599c;
+  }
+
+}
