@@ -1,0 +1,13 @@
+mixin callback
+	.callback#callback
+		a(href="javascript:parent.$.fancybox.close();").callback__close
+		p.callback__title Мы перезвоним вам
+		form.callback__form(action="" method="post")
+			.callback__field
+				input.callback__input(type="text" placeholder="Телефон" data-req="req" data-type="mobile")
+			.callback__field.callback__field--agr
+				input#radio(type="checkbox")
+				label.callback__label(for="radio")
+					a.callback__link(data-fancybox href="#agreement") Даю согласие на обработку персональных данных
+			.callback__field
+				button.callback__btn(type="submit") Отправить

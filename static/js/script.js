@@ -37,6 +37,65 @@ $(document).ready(function() {
 
 }).init();
 
+window.sf.form = ({
+  init: function() {
+	 var o = this;
+	 $(".callback__input").keydown(function(e) {
+		  -1 !== $.inArray(e.keyCode, [
+			 46,
+			 8,
+			 9,
+			 27,
+			 13,
+			 110,
+			 190
+		  ]) || 65 == e.keyCode && (!0 === e.ctrlKey || !0 === e.metaKey) || 35 <= e.keyCode && e.keyCode <= 40 || (e.shiftKey || e.keyCode < 48 || 57 < e.keyCode) && (e.keyCode < 96 || 105 < e.keyCode) && e.preventDefault()
+		}),
+		$(".callback__input, .feedback__input ").inputmask("+7 (999) 999 - 99 - 99", {
+		  placeholder: " ",
+		  showMaskOnHover: !1,
+		  showMaskOnFocus: !1
+		}),
+		$(".callback__form, .feedback__form").submit(function(e) {
+		  if (!o.checkForm($(this)))
+			 return !1
+		})
+  },
+  checkForm: function(form) {
+	  var checkResult = true;
+	  form.find('.warning').removeClass('warning');
+	  form.find('input, textarea, select').each(function() {
+		  if ($(this).data('req')) {
+			  switch ($(this).data('type')) {
+				  case 'email':
+					  var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+					  if (!re.test($(this).val())) {
+						  $(this).addClass('warning');
+						  checkResult = false;
+					  }
+					  break;
+				  case 'mobile':
+					  if ($.trim($(this).val()).length < 22) {
+						  $(this).addClass('warning');
+						  checkResult = false;
+					  }
+					  break;
+				  default:
+					  if ($.trim($(this).val()) === '') {
+						  $(this).addClass('warning');
+						  checkResult = false;
+					  }
+					  break;
+			  }
+		  }
+	  });
+	  return checkResult;
+
+  }
+
+}).init();
+
+
 	$(".nav__link").click(function(i) {
 		if ($(window).width() <= 1023 && $(this).next(".nav__list").slideToggle(), $("body").hasClass("index")) {
 			i.preventDefault();

@@ -20,6 +20,7 @@
 &__info{
   max-width: 723px;
   width:100%;
+  margin-right: 70px;
 }
 &__resume{
   max-width: 504px;
@@ -80,11 +81,13 @@
   background-image: url(../i/mail-icon.png);
   width: 21px;
   height: 15px;
+  top: 3px;
 }
 &__resume-item--add:before{
   background-image: url(../i/add-icon.png);
   width: 21px;
   height: 23px;
+  top: 3px;
 }
 &__resume-btn{
   text-decoration: none;
@@ -127,7 +130,7 @@
     color: #454545;
     font-weight: 400;
     margin: 0;
-    line-height: 1;
+    line-height: 22px;
     margin-bottom: 10px;
 }
 &__text ul li{
@@ -187,6 +190,21 @@
   height: 49px;
   cursor:pointer;
   transition: border-color 0.6s ease;
+}
+&__item-btn{
+    background-color: transparent;
+    max-width: 182px;
+    width:100%;
+    color: #454545;
+    font-size: 17px;
+    border:0;
+    border: 2px solid #454545;
+    height: 49px;
+    cursor:pointer;
+    transition: border-color 0.6s ease;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    display:none;
 }
 &__resume-formbtn:hover{
   border-color: #d5d5d5;

@@ -1,0 +1,47 @@
+mixin feedback
+	.feedback#feedback
+		a(href="javascript:parent.$.fancybox.close();").feedback__close
+		p.feedback__title Форма обратной связи
+		form.feedback__form
+			.feedback__fields
+				.feedback__form-left
+					.feedback__field
+						input.feedback__input(type="text" placeholder="Как к Вам обращаться?*" id="name" data-req="req")
+					.feedback__field
+						input.feedback__input(type="text" placeholder="Наименование Вашей организации")
+					.feedback__field
+						input.feedback__input(type="text" placeholder="Наименование изделия по претензии (номенклатура)")
+					.feedback__field
+						input.feedback__input(type="text" placeholder="№ счета")
+					.feedback__field
+						input.feedback__input(type="text" placeholder="Дата заказа")
+					.feedback__field
+						input.feedback__input(type="text" placeholder="Дата поставки")
+					.feedback__field
+						input.feedback__input(type="text" placeholder="Количество единиц по претензии")
+					.feedback__field
+						input.feedback__input(type="text" placeholder="Количество единиц в партии поставки")
+				.feedback__form-right
+					.feedback__field
+						input.feedback__input(type="text" placeholder="Год производства изделия")
+					.feedback__field
+						textarea.feedback__input.feedback__textarea(type="textarea" placeholder="Суть обращения*" data-req="req")
+					.feedback__field
+						input.feedback__input(type="text" placeholder="Фото несоответсвия")
+					.feedback__field
+						input.feedback__input(type="text" placeholder="Другие документы по данному обращению")
+					.feedback__field
+						input.feedback__input(type="text" placeholder="Email для ответа*" data-req="req" data-type="email")
+					.feedback__field
+						input.feedback__input(type="text" placeholder="Контактный телефон*" data-req="req" data-type="mobile")
+			.feedback__field.feedback__field--captcha-img
+				img(src="img/captcha.jpg")
+			.feedback__field.feedback__field--captcha
+				input.feedback__input(type="text" placeholder="Ввести код")
+			.feedback__field.feedback__field--agr
+				input#radio-fb(type="checkbox")
+				label.feedback__label(for="radio-fb")
+					a.feedback__link(data-fancybox href="#agreement") Даю согласие на обработку персональных данных
+			.feedback__field
+				button.feedback__btn(type="submit") Отправить
+			span.feedback__req *Обязательные поля

@@ -54,6 +54,7 @@ mixin vacancy
 						span.vacancy__info-text.vacancy__salari Заработная плата: 65 000-80 000 руб.
 						span.vacancy__info-text.vacancy__experience Требуемый опыт работы: более 3 лет
 						span.vacancy__info-text.vacancy__employment Полная занятость, полный день
+					button.vacancy__item-btn Показать еще
 			.vacancy__resume
 				h2.vacancy__title Отдел кадров
 				.vacancy__resume-item.vacancy__resume-item--address
@@ -66,8 +67,8 @@ mixin vacancy
 					span.vacancy__resume-text rezume@vologda-textile.com
 				a(href="#").vacancy__resume-btn Скачать шаблон анкеты-резюме
 				form(action="" method="post" name="resume-form")
-				.vacancy__resume-item.vacancy__resume-item--add
-					input.vacancy__resume-input.js-file(id="feedback-file" type="file" name="resume" data-placeholder="Добавить резюме")
-					label.vacancy__resume-label
-						span Прикрепить резюме
-				button.vacancy__resume-formbtn(type="submit") Отправить
+					.vacancy__resume-item.vacancy__resume-item--add
+						input.vacancy__resume-input.js-file(id="feedback-file" type="file" name="resume" data-placeholder="Добавить резюме")
+						label.vacancy__resume-label
+							span Прикрепить резюме
+					button.vacancy__resume-formbtn(type="submit") Отправить
