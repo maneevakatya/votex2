@@ -50,17 +50,17 @@ gulp.task('stylus', function() {
 			})(err);
 			this.emit('end');
 		}
-	})).pipe(wait(100)).pipe(sourcemaps.init()).
+	})).pipe(wait(100)).
+	// pipe(sourcemaps.init()).
 	pipe(stylus({
 		'include css': true
 	})).
 	pipe(postcss([
 		autoprefixer({
 			browsers: ['last 2 version']
-		}),
-		mqpacker
+		})
 	])).
-	pipe(sourcemaps.write('/')).
+	// pipe(sourcemaps.write('/')).
 	pipe(gulp.dest(dirs.build + '/static/css/')).
 	pipe(browserSync.stream({
 		match: '**/*.css'

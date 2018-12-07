@@ -145,16 +145,16 @@ window.sf.form = ({
 		$(".fabric-info__img-big").attr("data-index", n), $(".fabric-info__img-big").attr("src", i)
 	})
 
-	$(".vacancy__resume-label").click(function() {
+	$(".vacancy__resume-label, .feedback__label-file").click(function() {
 	$(this).parent().find("input[type='file']").click();
 })
 	$("input[type='file']").change(function() {
 	if ($(this).val() == '') {
-		$(this).parent().find(".vacancy__resume-label span").text('?????? ?? ???????????');
+		$(this).parent().find(".vacancy__resume-label span, .feedback__label-file span").text('?????? ?? ???????????');
 	} else {
 		var name = $(this).val();
 		name = name.split('\path\\')[1]
-		$(this).parent().find(".vacancy__resume-label span").text(name);
+		$(this).parent().find(".vacancy__resume-label span, .feedback__label-file span").text(name);
 	}
 
 	})

@@ -27,9 +27,13 @@ mixin feedback
 					.feedback__field
 						textarea.feedback__input.feedback__textarea(type="textarea" placeholder="Суть обращения*" data-req="req")
 					.feedback__field
-						input.feedback__input(type="text" placeholder="Фото несоответсвия")
+						input.feedback__input.feedback__js-file.js-file(id="feedback-file" type="file" name="resume" data-placeholder="Добавить резюме")
+						label.feedback__label-file
+							span Фото несоответствия
 					.feedback__field
-						input.feedback__input(type="text" placeholder="Другие документы по данному обращению")
+						input.feedback__input.feedback__js-file.js-file(id="feedback-file" type="file" name="resume" data-placeholder="Добавить резюме")
+						label.feedback__label-file
+							span Другие документы по несоответствию
 					.feedback__field
 						input.feedback__input(type="text" placeholder="Email для ответа*" data-req="req" data-type="email")
 					.feedback__field
